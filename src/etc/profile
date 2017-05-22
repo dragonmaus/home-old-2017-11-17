@@ -15,8 +15,8 @@ set -a
 # Set our default path
 PATH=/usr/local/sbin:/usr/local/bin:/usr/bin
 
-# Set our global shell config
-ENV=/etc/shrc
+# Set our shell config
+ENV=$HOME/.shrc
 
 set +a
 

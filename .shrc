@@ -1,3 +1,6 @@
+# Pull in global shell config
+test -r /etc/shrc && . /etc/shrc
+
 alias lc='ls -C'
 alias ll='ls -l'
 alias ls='ls -1A --color=auto'

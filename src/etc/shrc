@@ -38,8 +38,3 @@ HISTFILE=$HOME/.history
 
 # Source ~/.logout at exit
 trap -- 'test -r $HOME/.logout && . $HOME/.logout' EXIT
-
-# Hand off to user config
-ENV=$HOME/.shrc
-export ENV
-test -r $ENV && . $ENV
