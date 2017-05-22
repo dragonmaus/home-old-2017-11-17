@@ -3,6 +3,7 @@
 /.gnupg/
 /.history
 /.keychain/
+/.pki/
 /.secret/
 /.ssh/
 /.viminfo
