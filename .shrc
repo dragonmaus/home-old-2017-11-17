@@ -1,0 +1,11 @@
+alias lc='ls -C'
+alias ll='ls -l'
+alias ls='ls -1A --color=auto'
+alias rm='rm -d'
+
+set -o physical
+set -o vi
+
+HISTFILESIZE=10000
+HISTSIZE=12000
+PSC=τ

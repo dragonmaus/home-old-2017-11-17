@@ -1,0 +1,16 @@
+/.config/
+/.factorio/
+/.gnupg/
+/.history
+/.keychain/
+/.secret/
+/.ssh/
+/.viminfo
+/[A-Z]*/
+/bin/
+/obj/
+/sbin/
+/tmp/
+/xbin/
+*.lock
+*.log
