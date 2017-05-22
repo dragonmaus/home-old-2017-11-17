@@ -6,6 +6,7 @@ alias rm='rm -d'
 set -o physical
 set -o vi
 
+HISTCONTROL=ignoreboth
 HISTFILESIZE=10000
 HISTSIZE=12000
 PSC=τ
