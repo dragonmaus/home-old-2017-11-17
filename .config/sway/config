@@ -14,7 +14,7 @@ set $down j
 set $up k
 set $right l
 # Your preferred terminal emulator
-set $term st -f 'Liberation Mono:size=8'
+set $term st
 # Your preferred application launcher
 set $menu dmenu_run
 
