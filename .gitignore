@@ -3,6 +3,7 @@
 /.gnupg/
 /.history
 /.keychain/
+/.local/
 /.pki/
 /.secret/
 /.ssh/
