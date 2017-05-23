@@ -7,6 +7,7 @@
 /.pki/
 /.secret/
 /.ssh/
+/.terminfo/
 /.viminfo
 /[A-Z]*/
 /bin/
