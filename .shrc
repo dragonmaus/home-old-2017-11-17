@@ -4,7 +4,7 @@ test -r /etc/shrc && . /etc/shrc
 alias lc='ls -C'
 alias ll='ls -l'
 alias ls='ls -1A --color=auto'
-alias pstree='pstree -achlnp'
+alias pstree='pstree -Uachlnp'
 alias rm='rm -d'
 
 set -o physical
