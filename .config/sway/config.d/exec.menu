@@ -1,0 +1,2 @@
+set $menu dmenu_run
+bindsym $mod+d exec $menu
