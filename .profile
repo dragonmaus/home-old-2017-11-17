@@ -14,3 +14,11 @@ XKB_DEFAULT_OPTIONS=ctrl:swapcaps
 set +a
 
 eval `keychain --eval --quiet id_rsa`
+
+case $LOGNAME in
+*-)
+  LOGNAME=${LOGNAME%-}
+  USER=${USER%-}
+  exec sway
+  ;;
+esac
