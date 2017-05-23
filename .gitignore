@@ -4,6 +4,7 @@
 /.history
 /.keychain/
 /.local/
+/.password-store/
 /.pki/
 /.secret/
 /.ssh/
