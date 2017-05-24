@@ -8,6 +8,7 @@
 /.pki/
 /.secret/
 /.ssh/
+/.stack/
 /.terminfo/
 /.viminfo
 /[A-Z]*/
