@@ -1,11 +1,13 @@
 /.cache/
 /.factorio/
+/.gem/
 /.gnupg/
 /.history
 /.keychain/
 /.local/
 /.password-store/
 /.pki/
+/.rubies/
 /.secret/
 /.ssh/
 /.stack/
