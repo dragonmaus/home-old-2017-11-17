@@ -1,0 +1,6 @@
+set $lock xautolock -locknow
+set $menu dmenu_run
+set $mute amixer -q sset Master toggle
+set $mutemic amixer -q sset Capture toggle
+set $pass passmenu
+set $term st

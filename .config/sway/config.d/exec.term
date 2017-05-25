@@ -1,3 +1,0 @@
-set $term st
-bindsym $mod+Return exec $term
-bindsym XF86Launch1 exec $term

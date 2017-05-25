@@ -19,5 +19,4 @@
 /sbin/
 /tmp/
 /xbin/
-*.lock
 *.log
