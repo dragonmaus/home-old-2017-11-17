@@ -14,3 +14,5 @@ HISTCONTROL=ignoreboth
 HISTFILESIZE=10000
 HISTSIZE=12000
 PSC=τ
+
+. /usr/share/chruby/chruby.sh
