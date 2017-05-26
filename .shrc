@@ -15,4 +15,8 @@ HISTFILESIZE=10000
 HISTSIZE=12000
 PSC=τ
 
+master_key=`head -1 <"$HOME"/.secret/master_key`
+eval `keychain --agents gpg,ssh --eval --noask --quiet "$master_key" id_rsa`
+unset master_key
+
 . /usr/share/chruby/chruby.sh
