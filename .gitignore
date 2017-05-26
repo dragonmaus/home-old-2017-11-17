@@ -15,6 +15,7 @@
 /.viminfo
 /[A-Z]*/
 /bin/
+/go/
 /obj/
 /sbin/
 /tmp/
