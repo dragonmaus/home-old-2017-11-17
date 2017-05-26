@@ -4,3 +4,5 @@ set $mute amixer -q sset Master toggle
 set $mutemic amixer -q sset Capture toggle
 set $pass passmenu
 set $term st
+set $vold amixer -q sset Master 1-
+set $volu amixer -q sset Master 1+
