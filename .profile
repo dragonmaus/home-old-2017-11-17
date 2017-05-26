@@ -1,10 +1,11 @@
 set -a
 
 EDITOR=vi
+GOPATH=`go env GOPATH`
 GPG_TTY=`tty`
 LESSHISTFILE=/dev/null
 MAKEOBJDIRPREFIX=$HOME/obj
-PATH=$PATH:$HOME/bin:$HOME/sbin:$HOME/xbin:$HOME/.local/bin
+PATH=$PATH:$HOME/bin:$HOME/sbin:$HOME/xbin:$GOPATH/bin:$HOME/.local/bin
 
 XKB_DEFAULT_LAYOUT=us
 XKB_DEFAULT_MODEL=thinkpad
