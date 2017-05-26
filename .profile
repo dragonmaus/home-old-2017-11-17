@@ -13,7 +13,8 @@ XKB_DEFAULT_OPTIONS=ctrl:swapcaps
 
 set +a
 
-eval `keychain --eval --quiet id_rsa`
+master_key=`head -1 <"$HOME"/.secret/master_key`
+eval `keychain --agents gpg,ssh --eval --quiet "$master_key" id_rsa`
 
 case $LOGNAME in
 *-)
