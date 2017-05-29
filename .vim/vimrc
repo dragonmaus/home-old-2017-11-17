@@ -20,6 +20,7 @@ set showmatch
 set smartcase
 set softtabstop=2
 set tabpagemax^=10
+set title
 set undolevels=10000
 set viminfo='0,<0,f0,s0
 set nowrapscan
