@@ -5,30 +5,25 @@ general {
 
 order += "volume master"
 order += "disk /"
-order += "wireless _first_"
+order += "wireless wlp3s0"
 order += "battery all"
 order += "load"
-order += "tztime local"
-
-wireless _first_ {
-  format_up = "W: (%quality at %essid) %ip"
-  format_down = "W: down"
-}
+order += "time"
 
 battery all {
   format = "%status %percentage %remaining"
 }
 
-tztime local {
-  format = "%Y-%m-%d %H:%M:%S"
+disk "/" {
+  format = "%avail"
 }
 
 load {
   format = "%1min"
 }
 
-disk "/" {
-  format = "%avail"
+time {
+  format = "%Y-%m-%d %H:%M:%S"
 }
 
 volume master {
@@ -37,4 +32,9 @@ volume master {
   device = "default"
   mixer = "Master"
   mixer_idx = 0
+}
+
+wireless wlp3s0 {
+  format_up = "W: (%quality at %essid, %bitrate / %frequency) %ip"
+  format_down = "W: down"
 }
