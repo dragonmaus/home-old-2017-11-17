@@ -3,6 +3,7 @@ general {
   interval = 5
 }
 
+order += "volume master"
 order += "disk /"
 order += "wireless _first_"
 order += "battery all"
@@ -28,4 +29,12 @@ load {
 
 disk "/" {
   format = "%avail"
+}
+
+volume master {
+  format = "♪: %volume"
+  format_muted = "♪: muted (%volume)"
+  device = "default"
+  mixer = "Master"
+  mixer_idx = 0
 }
