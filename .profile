@@ -18,6 +18,7 @@ case $LOGNAME in
 *-)
   LOGNAME=${LOGNAME%-}
   USER=${USER%-}
+  exec >"$HOME"/tmp/sway.log 2>&1
   exec sway
   ;;
 esac
