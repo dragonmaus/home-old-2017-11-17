@@ -6,6 +6,7 @@ GPG_TTY=`tty`
 LESSHISTFILE=/dev/null
 MAKEOBJDIRPREFIX=$HOME/obj
 PATH=$PATH:$HOME/bin:$HOME/sbin:$HOME/xbin:$GOPATH/bin:$HOME/.local/bin
+SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/ssh-agent.socket
 
 XKB_DEFAULT_LAYOUT=us
 XKB_DEFAULT_MODEL=thinkpad
