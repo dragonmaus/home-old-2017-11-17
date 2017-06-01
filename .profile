@@ -16,8 +16,8 @@ set +a
 
 case $LOGNAME in
 *-)
-  LOGNAME=${LOGNAME%-}
-  USER=${USER%-}
+  set -a
+  eval `printenv | sed -n s/$LOGNAME/${LOGNAME%-}/gp`
   exec >"$HOME"/tmp/sway.log 2>&1
   exec sway
   ;;
