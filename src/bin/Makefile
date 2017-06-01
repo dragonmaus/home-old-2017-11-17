@@ -5,6 +5,7 @@ SUBDIR=	cdiff\
 	dircp\
 	git-addignore\
 	lock\
+	passmenu-smart\
 	pathsort\
 	pinentry-smart\
 	qr\
