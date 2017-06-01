@@ -4,12 +4,17 @@ SUBDIR=	cdiff\
 	clojure\
 	dircp\
 	git-addignore\
+	lock\
 	pathsort\
+	pinentry-smart\
 	qr\
 	randomise-wallpaper\
 	repl\
 	runjava\
-	shar
+	screensave\
+	shar\
+	sslock\
+	tarball
 
 SUBDIR:=	${SUBDIR:O}
 
