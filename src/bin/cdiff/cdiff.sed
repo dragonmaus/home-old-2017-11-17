@@ -1,23 +1,21 @@
 #!/usr/bin/sed -f
 
-/^[	 ]/ b
+/^+++/ s/^/[1m/
+/^---/ s/^/[1m/
 
-/^+++/ s/^/[32m/
-/^---/ s/^/[31m/
+/^+/ s/^/[32m/
+/^-/ s/^/[31m/
+/^@/ s/^/[36m/
 
-/^+/ s/^/[1;32m/
-/^-/ s/^/[1;31m/
-/^@/ s/^/[1;35m/
+/^Binary files .* are identical$/ s/^/[1m/
+/^Files .* are identical$/ s/^/[1m/
 
-/^Binary files .* are identical$/ s/^/[1;36m/
-/^Files .* are identical$/ s/^/[1;36m/
+/^\\/ s/^/[35m/
 
-/^\\/ s/^/[1;35m/
-
-/^diff / s/^/[1;33m/
+/^diff / s/^/[1m/
 
 t end
-s/^/[1;34m/
+s/^[^	 ]/[1m&/
 : end
 
 s/ \{1,\}$/[1;30m&/
