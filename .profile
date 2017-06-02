@@ -19,7 +19,6 @@ case $LOGNAME in
 *-)
   set -a
   eval `printenv | sed -n s/$LOGNAME/${LOGNAME%-}/gp`
-  exec >"$HOME"/tmp/sway.log 2>&1
-  exec sway
+  exec startx
   ;;
 esac
