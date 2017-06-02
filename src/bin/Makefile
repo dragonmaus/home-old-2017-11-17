@@ -13,6 +13,7 @@ SUBDIR=	cdiff\
 	repl\
 	runjava\
 	screensave\
+	set-wallpaper\
 	shar\
 	sslock\
 	tarball
