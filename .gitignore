@@ -13,7 +13,7 @@
 /.secret/
 /.ssh/
 /.stack/
-/.terminfo/
+/.terminfo
 /.viminfo
 /.weechat/
 /[A-Z]*/
