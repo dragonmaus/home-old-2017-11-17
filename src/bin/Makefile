@@ -12,6 +12,7 @@ SUBDIR=	cdiff\
 	randomise-wallpaper\
 	repl\
 	runjava\
+	screencap\
 	screensave\
 	set-wallpaper\
 	shar\
