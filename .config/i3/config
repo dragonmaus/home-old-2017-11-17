@@ -58,6 +58,16 @@ bindsym $mod+Up focus up
 bindsym $mod+$right focus right
 bindsym $mod+Right focus right
 
+# moving
+bindsym $mod+Shift+$left move left
+bindsym $mod+Shift+$down move down
+bindsym $mod+Shift+$up move up
+bindsym $mod+Shift+$right move right
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
 # workspaces
 bindsym $mod+1 workspace 1:α
 bindsym $mod+2 workspace 2:β
