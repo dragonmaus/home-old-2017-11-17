@@ -188,11 +188,6 @@ assign [class="^widelands$"] → 3:γ
 # Startup Commands #
 ####################
 
-exec autocutsel -fork
-exec autocutsel -fork -selection PRIMARY
-exec autocutsel -fork -selection SECONDARY
-exec xautolock -detectsleep -locker "i3lock -i /home/dragon/Pictures/Wallpapers/.current" &
-
 ##########
 # Colors #
 ##########
