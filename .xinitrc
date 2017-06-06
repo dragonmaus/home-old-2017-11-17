@@ -4,7 +4,7 @@ set-wallpaper "$HOME"/Pictures/Wallpapers/.current
 
 compton -b
 
-redshift &
+redshift-gtk &
 
 autocutsel -fork
 autocutsel -fork -selection PRIMARY
