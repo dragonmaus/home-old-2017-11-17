@@ -6,6 +6,7 @@
 set $mod Mod4
 
 # apps
+set $appmenu i3-dmenu-desktop
 set $lock xautolock -locknow
 set $menu dmenu_run
 set $mute amixer -q sset Master toggle
@@ -42,6 +43,7 @@ bindsym $mod+Shift+r restart	# restart in-place
 # commands
 bindsym $mod+d exec $menu	# open menu
 bindsym $mod+Return exec $term	# open terminal
+bindsym $mod+Shift+d exec $appmenu	# open app menu
 
 # layouts
 bindsym $mod+s layout stacking
