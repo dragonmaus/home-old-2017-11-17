@@ -19,6 +19,7 @@
 /.terminfo
 /.viminfo
 /.weechat/
+/.widelands/
 /[A-Z]*/
 /bin/
 /go/
