@@ -2,10 +2,10 @@
 # Variables #
 #############
 
-# logo key; use Mod1 for Alt
+## logo key; use Mod1 for Alt
 set $mod Mod4
 
-# apps
+## apps
 set $appmenu i3-dmenu-desktop
 set $lock xautolock -locknow
 set $menu dmenu_run
@@ -18,7 +18,7 @@ set $term st
 set $vold amixer -q sset Master 1-
 set $volu amixer -q sset Master 1+
 
-# vi-style direction keys
+## vi-style direction keys
 set $left h
 set $down j
 set $up k
@@ -34,23 +34,30 @@ font pango:Liberation Mono 9
 # Keyboard Bindings #
 #####################
 
-# i3 control
-bindsym $mod+Shift+e exit	# exit
-bindsym $mod+Shift+q kill	# kill focused window
-bindsym $mod+Shift+c reload	# reload configuration file
-bindsym $mod+Shift+r restart	# restart in-place
+## i3 control
+# exit
+bindsym $mod+Shift+e exit
+# kill focused window
+bindsym $mod+Shift+q kill
+# reload configuration file
+bindsym $mod+Shift+c reload
+# restart in-place
+bindsym $mod+Shift+r restart
 
-# commands
-bindsym $mod+d exec $menu	# open menu
-bindsym $mod+Return exec $term	# open terminal
-bindsym $mod+Shift+d exec $appmenu	# open app menu
+## commands
+# open menu
+bindsym $mod+d exec $menu
+# open terminal
+bindsym $mod+Return exec $term
+# open app menu
+bindsym $mod+Shift+d exec $appmenu
 
-# layouts
+## layouts
 bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
-# focus
+## focus
 bindsym $mod+$left focus left
 bindsym $mod+Left focus left
 bindsym $mod+$down focus down
@@ -60,7 +67,7 @@ bindsym $mod+Up focus up
 bindsym $mod+$right focus right
 bindsym $mod+Right focus right
 
-# moving
+## moving
 bindsym $mod+Shift+$left move left
 bindsym $mod+Shift+$down move down
 bindsym $mod+Shift+$up move up
@@ -70,7 +77,7 @@ bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
-# workspaces
+## workspaces
 bindsym $mod+1 workspace 1:α
 bindsym $mod+2 workspace 2:β
 bindsym $mod+3 workspace 3:γ
@@ -92,17 +99,17 @@ bindsym $mod+Shift+8 move container to workspace 8:θ
 bindsym $mod+Shift+9 move container to workspace 9:ι
 bindsym $mod+Shift+0 move container to workspace 10:κ
 
-# container control
+## container control
 bindsym $mod+u border toggle
 bindsym $mod+f fullscreen
 
-# media keys
+## media keys
 bindsym XF86AudioLowerVolume exec $vold
 bindsym XF86AudioMicMute exec $mutemic
 bindsym XF86AudioMute exec $mute
 bindsym XF86AudioRaiseVolume exec $volu
 
-# other
+## other
 bindsym XF86Launch1 exec $pass
 bindsym XF86ScreenSaver exec $lock
 bindsym $mod+Print exec $scapf
@@ -166,10 +173,10 @@ for_window [class="^widelands$"] border none
 # Workspace Assignments #
 #########################
 
-# browsers → beta
+## browsers → beta
 assign [class="^Chromium$"] → 2:β
 
-# games → gamma
+## games → gamma
 assign [class="^Dwarf_Fortress$"] → 3:γ
 assign [class="^Freeciv-gtk3$"] → 3:γ
 assign [class="^endless-sky$"] → 3:γ
