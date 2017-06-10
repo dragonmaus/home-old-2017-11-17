@@ -6,17 +6,6 @@
 ### lines beginning with a '#' character are comments
 ###
 
-[jack] # JACK audio output
-
-# Automatically connect to writable clients (boolean)
-#jack-auto-connect=1
-
-# Connect to clients matching (string)
-#jack-connect-regex=system
-
-# Software gain (float)
-#jack-gain=1.000000
-
 [alsa] # ALSA audio output
 
 # Audio output device (string)
@@ -535,14 +524,6 @@
 
 # Audio configuration (string)
 #linsys-hdsdi-audio=0=1,1
-
-[access_jack] # JACK audio input
-
-# Pace (boolean)
-#jack-input-use-vlc-pace=0
-
-# Auto connection (boolean)
-#jack-input-auto-connect=0
 
 [access_alsa] # ALSA audio capture
 
@@ -1493,6 +1474,11 @@
 
 # Album art filename (string)
 #album-art-filename=
+
+[notify] # LibNotify Notification Plugin
+
+# Timeout (ms) (integer)
+#notify-timeout=4000
 
 [sap] # Network streams (SAP)
 
