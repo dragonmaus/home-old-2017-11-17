@@ -24,6 +24,9 @@ set $down j
 set $up k
 set $right l
 
+## other
+set $refresh pkill -USR1 i3status
+
 #########
 # Fonts #
 #########
@@ -104,10 +107,10 @@ bindsym $mod+u border toggle
 bindsym $mod+f fullscreen
 
 ## media keys
-bindsym XF86AudioLowerVolume exec $vold
+bindsym XF86AudioLowerVolume exec $vold && $refresh
 bindsym XF86AudioMicMute exec $mutemic
-bindsym XF86AudioMute exec $mute
-bindsym XF86AudioRaiseVolume exec $volu
+bindsym XF86AudioMute exec $mute && $refresh
+bindsym XF86AudioRaiseVolume exec $volu && $refresh
 
 ## other
 bindsym XF86Launch1 exec $pass
