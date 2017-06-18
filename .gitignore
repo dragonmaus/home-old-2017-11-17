@@ -16,6 +16,7 @@
 /.secret/
 /.ssh/
 /.stack/
+/.steam*
 /.terminfo
 /.viminfo
 /.weechat/
