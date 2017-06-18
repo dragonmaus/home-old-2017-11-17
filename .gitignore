@@ -11,6 +11,7 @@
 /.gem/
 /.gnupg/
 /.keychain/
+/.lightyears.cfg
 /.local/
 /.password-store/
 /.pki/
