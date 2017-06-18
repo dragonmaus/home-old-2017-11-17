@@ -158,6 +158,7 @@ hide_edge_borders smart
 # Container Configuration #
 ###########################
 
+for_window [class="^Angband$"] border none
 for_window [class="^Dwarf_Fortress$"] border none
 for_window [class="^Freeciv-gtk3$"] border none
 for_window [class="^endless-sky$"] border none
@@ -180,6 +181,7 @@ for_window [class="^widelands$"] border none
 assign [class="^Chromium$"] → 2:β
 
 ## games → gamma
+assign [class="^Angband$"] → 3:γ
 assign [class="^Dwarf_Fortress$"] → 3:γ
 assign [class="^Freeciv-gtk3$"] → 3:γ
 assign [class="^endless-sky$"] → 3:γ
