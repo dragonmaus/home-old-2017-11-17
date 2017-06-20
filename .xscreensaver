@@ -1,12 +1,12 @@
 # XScreenSaver Preferences File
-# Written by xscreensaver-demo 5.36 for dragon on Tue Jun 20 08:56:49 2017.
+# Written by xscreensaver-demo 5.36 for dragon on Tue Jun 20 10:16:00 2017.
 # https://www.jwz.org/xscreensaver/
 
-timeout:	0:08:00
+timeout:	0:10:00
 cycle:		0:10:00
-lock:		False
-lockTimeout:	0:00:00
-passwdTimeout:	0:00:30
+lock:		True
+lockTimeout:	0:15:00
+passwdTimeout:	0:00:10
 visualID:	default
 installColormap:    True
 verbose:	False

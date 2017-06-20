@@ -10,8 +10,6 @@ autocutsel -fork
 autocutsel -fork -selection PRIMARY
 autocutsel -fork -selection SECONDARY
 
-xautolock -locker "i3lock -i '$HOME'/Pictures/Wallpapers/.current" &
-
 xscreensaver &
 
 exec i3 >"$HOME"/.config/i3/session-`date -u +%FT%T%:z`.log 2>&1
