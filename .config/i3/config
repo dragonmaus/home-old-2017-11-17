@@ -8,6 +8,7 @@ set $mod Mod4
 ## apps
 set $appmenu i3-dmenu-desktop
 set $lock xscreensaver-command -lock
+set $save xscreensaver-command -activate
 set $menu dmenu_run
 set $mute amixer -q sset Master toggle
 set $mutemic amixer -q sset Capture toggle
@@ -115,6 +116,7 @@ bindsym XF86AudioRaiseVolume exec $volu && $refresh
 ## other
 bindsym XF86Launch1 exec $pass
 bindsym XF86ScreenSaver exec $lock
+bindsym Shift+XF86ScreenSaver exec $save
 bindsym $mod+Print exec $scapf
 bindsym $mod+Shift+Print exec $scapr
 
