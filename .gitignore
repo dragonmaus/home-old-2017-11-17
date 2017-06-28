@@ -26,6 +26,7 @@
 /.viminfo
 /.weechat/
 /.widelands/
+/.wine/
 /[A-Z]*
 /bin/
 /go/
