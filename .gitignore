@@ -1,5 +1,6 @@
 /.*history
 /.ICAClient/
+/.PlayOnLinux/
 /.Xauthority
 /.alephone/
 /.angband/
@@ -25,7 +26,7 @@
 /.viminfo
 /.weechat/
 /.widelands/
-/[A-Z]*/
+/[A-Z]*
 /bin/
 /go/
 /obj/
