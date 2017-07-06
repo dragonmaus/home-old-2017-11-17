@@ -8,13 +8,16 @@
 /.bzf/
 /.cache/
 /.clipboard
+/.droid_assault*
 /.dwarffortress/
 /.factorio/
 /.gem/
 /.gnupg/
+/.java/
 /.keychain/
 /.lightyears.cfg
 /.local/
+/.oracle_jre_usage/
 /.password-store/
 /.pki/
 /.rubies/
@@ -23,6 +26,7 @@
 /.stack/
 /.steam*
 /.terminfo
+/.vendetta/
 /.viminfo
 /.weechat/
 /.widelands/
