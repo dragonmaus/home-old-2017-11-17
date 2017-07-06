@@ -12,4 +12,6 @@ autocutsel -fork -selection SECONDARY
 
 xscreensaver &
 
+gzip "$HOME"/.config/i3/session-*.log
+
 exec i3 >"$HOME"/.config/i3/session-`date -u +%FT%T%:z`.log 2>&1
