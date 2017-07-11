@@ -5,7 +5,11 @@ BINGRP=	dragon
 BINDIR?=	${HOME}/bin
 WARNS=	6
 
-.SUFFIXES: .sed
+.SUFFIXES: .calc .sed
+
+.calc:
+	rm -f ${.TARGET}
+	cp ${.IMPSRC} ${.TARGET}
 
 .sed:
 	rm -f ${.TARGET}

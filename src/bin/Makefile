@@ -10,6 +10,7 @@ SUBDIR=	cdiff\
 	pinentry-smart\
 	qr\
 	randomise-wallpaper\
+	ratio\
 	repl\
 	runjava\
 	screencap\
