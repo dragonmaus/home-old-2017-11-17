@@ -6,6 +6,17 @@
 ### lines beginning with a '#' character are comments
 ###
 
+[jack] # JACK audio output
+
+# Automatically connect to writable clients (boolean)
+#jack-auto-connect=1
+
+# Connect to clients matching (string)
+#jack-connect-regex=system
+
+# Software gain (float)
+#jack-gain=1.000000
+
 [alsa] # ALSA audio output
 
 # Audio output device (string)
@@ -525,6 +536,14 @@
 # Audio configuration (string)
 #linsys-hdsdi-audio=0=1,1
 
+[access_jack] # JACK audio input
+
+# Pace (boolean)
+#jack-input-use-vlc-pace=0
+
+# Auto connection (boolean)
+#jack-input-auto-connect=0
+
 [access_alsa] # ALSA audio capture
 
 # Stereo (boolean)
@@ -599,6 +618,11 @@
 
 # Scaling mode (integer)
 #swscale-mode=2
+
+[gstdecode] # GStreamer Based Decoder
+
+# Use DecodeBin (boolean)
+#use-decodebin=0
 
 [x264] # H.264/MPEG-4 Part 10/AVC encoder (x264)
 
@@ -2744,15 +2768,15 @@ skins2-last=/usr/share/vlc/skins2/default.vlt
 # XVideo format id (integer)
 #xvideo-format-id=0
 
-[xcb_window] # X11 video window (XCB)
-
-# X11 display (string)
-#x11-display=
-
 [vout_sdl] # Simple DirectMedia Layer video output
 
 # SDL chroma format (string)
 #sdl-chroma=
+
+[xcb_window] # X11 video window (XCB)
+
+# X11 display (string)
+#x11-display=
 
 [xcb_x11] # X11 video output (XCB)
 
