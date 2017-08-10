@@ -269,6 +269,7 @@ programs:								      \
   GL: 				raverhoop -root				    \n\
   GL: 				splodesic -root				    \n\
   GL: 				unicrud -root				    \n\
+  GL: 				vigilance -root -count 20		    \n\
 
 
 pointerPollTime:    0:00:05
