@@ -18,6 +18,7 @@
 /.keychain/
 /.lightyears.cfg
 /.local/
+/.mozilla/
 /.oracle_jre_usage/
 /.password-store/
 /.pki/
