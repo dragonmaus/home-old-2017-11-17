@@ -3,6 +3,7 @@
 SUBDIR=	cdiff\
 	clojure\
 	dircp\
+	en%\
 	git-addignore\
 	lock\
 	passmenu-smart\
@@ -18,7 +19,8 @@ SUBDIR=	cdiff\
 	set-wallpaper\
 	shar\
 	sslock\
-	tarball
+	tarball\
+	un%
 
 SUBDIR:=	${SUBDIR:O}
 
