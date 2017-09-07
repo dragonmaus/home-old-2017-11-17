@@ -3,28 +3,33 @@
 . $HOME/lib/stdlib.sh
 
 findopts=
-gzipopts=
+zipopts=
 taropts=
-gzip=
-opts=123456789svxz
+zip=
+opts=123456789Xbgsvx
 
 usage() (die 100 usage "tarball [-$opts] path")
 
 while getopts $opts opt; do
   case $opt in
   1|2|3|4|5|6|7|8|9)
-    gzip=.gz
-    gzipopts=$gzipopts$o
+    zipopts=$zipopts$o
+    ;;
+  X)
+    zip=.xz
+    ;;
+  b)
+    zip=.bz2
+    ;;
+  g)
+    zip=.gz
     ;;
   s|x)
     findopts=$findopts$o
     ;;
   v)
-    gzipopts=$gzipopts$o
+    zipopts=$zipopts$o
     taropts=$taropts$o
-    ;;
-  z)
-    gzip=.gz
     ;;
   *)
     usage
@@ -36,7 +41,20 @@ test x"$1" = x && usage
 
 test -e "$1" || die 111 fatal "$1: No such file or directory"
 
-test x$gzip = x && gzip() (exec cat)
+case $zip in
+.bz2)
+  zip() (exec bzip2 ${1+"$@"})
+  ;;
+.gz)
+  zip() (exec gzip -n ${1+"$@"})
+  ;;
+.xz)
+  zip() (exec xz ${1+"$@"})
+  ;;
+*)
+  zip() (exec cat)
+  ;;
+esac
 
 first=yes
 for dir; do
@@ -46,7 +64,7 @@ for dir; do
     echo 1>&2
   fi
 
-  out=$dir.tar$gzip
+  out=$dir.tar$zip
   echo "Creating $out..." 1>&2
 
   rm -f "$out"{new}
@@ -56,7 +74,7 @@ for dir; do
   | sort -z \
   | tr '\1' '/' \
   | bsdtar -cn$taropts -T - -f - --null \
-  | gzip -cn$gzipopts \
+  | zip -c$zipopts \
   > "$out"{new}
 
   touch -ch -r "$dir" "$out"{new}
