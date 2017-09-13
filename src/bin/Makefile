@@ -5,6 +5,7 @@ SUBDIR=	cdiff\
 	dircp\
 	en%\
 	git-addignore\
+	lefix\
 	lock\
 	passmenu-smart\
 	pathsort\
