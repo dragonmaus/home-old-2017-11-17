@@ -16,8 +16,8 @@ set $pass passmenu-smart
 set $scapf screencap -f
 set $scapr screencap -r
 set $term st
-set $vold amixer -q sset Master 1-
-set $volu amixer -q sset Master 1+
+set $vold amixer -q sset Master 5%-
+set $volu amixer -q sset Master 5%+
 
 ## vi-style direction keys
 set $left h
