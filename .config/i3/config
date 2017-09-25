@@ -183,26 +183,10 @@ for_window [class="^widelands$"] border none
 #########################
 
 ## browsers → beta
-assign [class="^Chromium$"] → 2:β
+assign [window_role="^browser$"] → 2:β
 
 ## games → gamma
-assign [class="^20kly$"] → 3:γ
-assign [class="^Angband$"] → 3:γ
 assign [class="^Dwarf_Fortress$"] → 3:γ
-assign [class="^Freeciv-gtk3$"] → 3:γ
-assign [class="^Naev$"] → 3:γ
-assign [class="^bzflag$"] → 3:γ
-assign [class="^endless-sky$"] → 3:γ
-assign [class="^factorio$"] → 3:γ
-assign [class="^freedroid$"] → 3:γ
-assign [class="^net-sf-freecol-FreeCol$"] → 3:γ
-assign [class="^pingus.bin$"] → 3:γ
-assign [class="^pyrogenesis$"] → 3:γ
-assign [class="^simutrans$"] → 3:γ
-assign [class="^spring$"] → 3:γ
-assign [class="^warzone2100$"] → 3:γ
-assign [class="^wesnoth$"] → 3:γ
-assign [class="^widelands$"] → 3:γ
 
 ####################
 # Startup Commands #
