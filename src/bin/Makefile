@@ -4,6 +4,7 @@ SUBDIR=	cdiff\
 	clojure\
 	dircp\
 	en%\
+	git-addcrypt\
 	git-addignore\
 	lefix\
 	lock\
