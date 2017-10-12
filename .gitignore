@@ -39,12 +39,15 @@
 /[A-Z]*
 /bin/
 /go/
+/inc/
 /obj/
 /sbin/
 /tmp/
 /xbin/
 *+
 *-
+*.a
 *.log
 *.log.gz
+*.o
 *~

@@ -5,6 +5,9 @@ BINGRP=	dragon
 BINDIR?=	${HOME}/bin
 WARNS=	6
 
+CFLAGS+=	-I${HOME}/inc
+LDFLAGS+=	-L${HOME}/lib
+
 .SUFFIXES: .calc .sed
 
 .calc:
