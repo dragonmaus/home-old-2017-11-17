@@ -5,6 +5,6 @@
 [gpg]
 	program = gpg2
 [include]
-	path = .secret/gitconfig
+	path = .gitconfig.secret
 [push]
 	default = simple
