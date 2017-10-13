@@ -1,0 +1,62 @@
+diff --git a/bin/bootstrap.d/arch.sh b/bin/bootstrap.d/arch.sh
+new file mode 100644
+index 000000000..1f0181962
+--- /dev/null
++++ b/bin/bootstrap.d/arch.sh
+@@ -0,0 +1,56 @@
++log Bootstrapping Arch
++
++log Updating system
++sudo pacman -Syuu --noconfirm
++
++log Resolving dependencies
++DEPS=
++while read p v; do
++  case $p in
++  elasticsearch)   continue;;
++  jpegtran)        p=libjpeg-turbo;;
++  jre)             p=jre8-openjdk-headless;;
++  libcurl-dev)     p=curl;;
++  libicu-dev)      p=icu;;
++  libopencv-dev)   p=opencv;;
++  libpq-dev)       p=libpqxx;;
++  libreadline-dev) p=readline;;
++  libxml2-dev)     p=libxml2;;
++  esac
++  DEPS=$DEPS" $p"
++done <bin/bootstrap.d/deps.txt
++
++aurman() (
++  d=`mktemp -d`
++  trap "rm -fr '$d'" EXIT KILL INT
++  git clone https://aur.archlinux.org/$1.git "$d"
++  cd "$d"
++  makepkg -si --needed --noconfirm
++  cd /
++)
++
++log Installing legacy Elasticsearch
++aurman elasticsearch2
++
++log Installing dependencies
++sudo pacman -S --needed --noconfirm $DEPS
++
++log Initialising database
++PGDATA=~postgres/data
++DB_PROG='postgres -D '$PGDATA
++DB_USER=postgres
++sudo chattr +C "$PGDATA"
++sudo -u "$DB_USER" initdb --locale "$LANG" -E UTF8 -D "$PGDATA"
++sudo systemctl enable postgresql.service
++sudo systemctl start postgresql.service
++sudo -u "$DB_USER" createuser "$DB_USER"
++sudo -u "$DB_USER" createdb "$DB_USER"
++
++log Fixing Arch-specific issues
++#sudo ln -f /dev/null /dev/raw1394
++sudo ln -fs "$APP_ROOT"/config/nginx.local.conf /etc/nginx/nginx.conf
++
++log Starting background services
++sudo systemctl daemon-reload
++sudo systemctl enable elasticsearch
++sudo systemctl start elasticsearch

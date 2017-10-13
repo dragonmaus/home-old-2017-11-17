@@ -1,0 +1,10 @@
+/[A-Z]*
+/applications/
+/desktop-directories/
+/feral-interactive/
+/icons/
+/man/
+/mime/
+/recently-used.xbel
+/terminfo/
+/vulkan/
