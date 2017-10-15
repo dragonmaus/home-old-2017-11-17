@@ -4,6 +4,9 @@
 [submodule ".local/share/endless-sky"]
 	path = .local/share/endless-sky
 	url = dragon@dragonma.us.to.:endless-sky.git
+[submodule ".password-store"]
+	path = .password-store
+	url = dragon@dragonma.us.to.:.password-store.git
 [submodule "src/ext/git/PonyAPI"]
 	path = src/ext/git/PonyAPI
 	url = git@github.com:Xe/PonyAPI.git
