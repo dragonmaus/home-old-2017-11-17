@@ -18,13 +18,13 @@
 	url = git@github.com:dragonmaus/libdjb.git
 [submodule "src/ext/suckless/abduco"]
 	path = src/ext/suckless/abduco
-	url = https://github.com/martanne/abduco.git
+	url = git@github.com:martanne/abduco.git
 [submodule "src/ext/suckless/dmenu"]
 	path = src/ext/suckless/dmenu
 	url = git://git.suckless.org/dmenu
 [submodule "src/ext/suckless/dvtm"]
 	path = src/ext/suckless/dvtm
-	url = https://github.com/martanne/dvtm.git
+	url = git@github.com:martanne/dvtm.git
 [submodule "src/ext/suckless/dwm"]
 	path = src/ext/suckless/dwm
 	url = git://git.suckless.org/dwm
