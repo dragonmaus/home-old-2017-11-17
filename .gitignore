@@ -16,7 +16,6 @@
 /.wine/
 /[A-Z]*
 /bin/
-/etc/
 /inc/
 /obj/
 /sbin/
