@@ -164,6 +164,7 @@ for_window [class="^20kly$"] border none
 for_window [class="^Angband$"] border none
 for_window [class="^Dwarf_Fortress$"] border none
 for_window [class="^Freeciv-gtk3$"] border none
+for_window [class="^Minecraft"] border none
 for_window [class="^Naev$"] border none
 for_window [class="^bzflag$"] border none
 for_window [class="^endless-sky$"] border none
@@ -187,6 +188,7 @@ assign [window_role="^browser$"] → 2:β
 
 ## games → gamma
 assign [class="^Dwarf_Fortress$"] → 3:γ
+assign [class="^Minecraft"] → 3:γ
 
 ####################
 # Startup Commands #
