@@ -5,7 +5,7 @@ gamma:0.0
 saturation:0.0
 renderDistance:12
 guiScale:2
-particles:0
+particles:1
 bobView:true
 anaglyph3d:false
 advancedOpengl:true
@@ -13,9 +13,9 @@ maxFps:120
 fboEnable:true
 difficulty:2
 fancyGraphics:false
-ao:2
+ao:0
 clouds:true
-resourcePacks:["faithful32pack_1_7_x.zip"]
+resourcePacks:[]
 lastServer:
 lang:en_US
 chatVisibility:0
@@ -66,7 +66,7 @@ key_key.inventory:52
 key_key.chat:28
 key_key.playerlist:15
 key_key.pickItem:-98
-key_key.command:44
+key_key.command:53
 key_key.screenshot:60
 key_key.togglePerspective:63
 key_key.smoothCamera:0
