@@ -78,6 +78,7 @@ for dir; do
   > "$out"{new}
 
   touch -ch -r "$dir" "$out"{new}
+  fsync "$out"{new}
 
   mv -f "$out"{new} "$out"
 done
