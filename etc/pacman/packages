@@ -16,11 +16,13 @@ dfhack-bin
 dialog
 dosfstools
 downgrader
+easytag
 endless-sky
 factorio-experimental
 feh
 firefox
 fortune-mod
+gendesk
 geoip
 ghc
 git
@@ -36,6 +38,7 @@ jre8-openjdk-headless
 keepassxc
 ldraw-parts-library
 leocad
+libmtp
 libreoffice-fresh
 linux-steam-integration
 lshw
