@@ -1,4 +1,9 @@
 acpi
+alephone-eternalx
+alephone-evil
+alephone-infinity
+alephone-marathon
+alephone-marathon2
 alsa-utils
 autocutsel
 bluez
@@ -11,9 +16,9 @@ chruby
 cmatrix
 compton
 cups-pdf
-curl
 dfhack-bin
 dialog
+dosbox
 dosfstools
 downgrader
 easytag
@@ -25,7 +30,6 @@ fortune-mod
 gendesk
 geoip
 ghc
-git
 git-crypt
 go
 gparted
@@ -55,7 +59,9 @@ povray
 pstoedit
 pulseaudio-alsa
 python-gobject
+python-xdg
 python2-beautifulsoup4
+python2-html5lib
 qrencode
 redshift
 reflector
