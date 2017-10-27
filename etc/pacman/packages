@@ -5,6 +5,8 @@ alephone-infinity
 alephone-marathon
 alephone-marathon2
 alsa-utils
+android-tools
+android-udev
 autocutsel
 bluez
 bluez-utils
@@ -43,7 +45,6 @@ jre8-openjdk-headless
 keepassxc
 ldraw-parts-library
 leocad
-libmtp
 libreoffice-fresh
 linux-steam-integration
 lshw
