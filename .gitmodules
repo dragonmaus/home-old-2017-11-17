@@ -13,6 +13,9 @@
 [submodule "src/ext/git/derpibooru"]
 	path = src/ext/git/derpibooru
 	url = git@github.com:derpibooru/derpibooru.git
+[submodule "src/ext/git/freeotp-export"]
+	path = src/ext/git/freeotp-export
+	url = git@github.com:viljoviitanen/freeotp-export.git
 [submodule "src/ext/git/home-old"]
 	path = src/ext/git/home-old
 	url = git@github.com:dragonmaus/home-old.git
