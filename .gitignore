@@ -1,5 +1,6 @@
 /.*history
 /.[A-Z]*
+/.android/
 /.cache/
 /.clipboard
 /.dwarffortress/
