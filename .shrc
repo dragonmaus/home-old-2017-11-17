@@ -2,6 +2,7 @@
 test -r /etc/shrc && . /etc/shrc
 
 alias dvtm='abduco -A dvtm dvtm'
+alias hd='hexdump -C'
 alias lc='ls -C'
 alias ll='ls -l'
 alias ls='ls -1A --color=auto'
