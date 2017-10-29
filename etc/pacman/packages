@@ -49,6 +49,7 @@ libreoffice-fresh
 linux-steam-integration
 lshw
 minecraft
+minetest
 netctl-dispatcher-chrony
 openssh
 p7zip
@@ -66,7 +67,6 @@ python2-html5lib
 qrencode
 redshift
 reflector
-rfkill
 ripgrep
 ruby
 ruby-install
