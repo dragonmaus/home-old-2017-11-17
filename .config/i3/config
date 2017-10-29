@@ -165,6 +165,7 @@ for_window [class="^Angband$"] border none
 for_window [class="^Dwarf_Fortress$"] border none
 for_window [class="^Freeciv-gtk3$"] border none
 for_window [class="^Minecraft"] border none
+for_window [class="^Minetest$"] border none
 for_window [class="^Naev$"] border none
 for_window [class="^bzflag$"] border none
 for_window [class="^endless-sky$"] border none
