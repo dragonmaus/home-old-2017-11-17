@@ -1,5 +1,5 @@
 # XScreenSaver Preferences File
-# Written by xscreensaver-demo 5.37 for dragon on Fri Oct  6 10:14:34 2017.
+# Written by xscreensaver-demo 5.37 for dragon on Sat Oct 28 20:42:43 2017.
 # https://www.jwz.org/xscreensaver/
 
 timeout:	0:10:00
@@ -189,7 +189,7 @@ programs:								      \
 -				fontglide -root				    \n\
 - GL: 				gleidescope -root			    \n\
 - GL: 				glknots -root				    \n\
-  GL: 				glmatrix -root				    \n\
+- GL: 				glmatrix -root				    \n\
 - GL: 				glslideshow -root			    \n\
 - GL: 				hypertorus -root			    \n\
 - GL: 				jigglypuff -root			    \n\
