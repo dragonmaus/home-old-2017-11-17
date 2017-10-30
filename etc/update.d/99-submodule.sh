@@ -1,1 +1,1 @@
-git submodule foreach git pull
+git submodule foreach --recursive git pull
