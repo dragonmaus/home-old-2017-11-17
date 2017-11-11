@@ -17,17 +17,15 @@ done
 echo "#"
 
 mkdirs() (
-  test x"$1" = x. && exit
-  test x"$1" = x/ && exit
   d=`dirname "$1"`
-  mkdirs "$d"
-  echo "mkdir '$1' >/dev/null 2>&1"
+  test x"$d" = x. && exit
+  test x"$d" = x/ && exit
+  echo "mkdir -p $d"
 )
 
 for f do
   echo "echo x - $f"
-  d=`dirname "$f"`
-  mkdirs "$d"
+  mkdirs "$f"
   echo "sed 's/^X//' >$f << 'END-of-$f'"
   sed 's/^/X/' <"$f"
   echo "END-of-$f"
