@@ -64,6 +64,7 @@ povray
 pstoedit
 pulseaudio-alsa
 python-gobject
+python-vobject
 python-xdg
 python2-beautifulsoup4
 python2-html5lib
