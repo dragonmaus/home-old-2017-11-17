@@ -2,7 +2,9 @@
 /.[A-Z]*
 /.android/
 /.cache/
+/.calendars/
 /.clipboard
+/.contacts/
 /.dwarffortress/
 /.esd_auth
 /.gem/

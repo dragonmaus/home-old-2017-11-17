@@ -45,6 +45,8 @@ iw
 jpegoptim
 jre8-openjdk-headless
 keepassxc
+khal
+khard
 ldraw-parts-library
 leocad
 libreoffice-fresh
@@ -81,6 +83,7 @@ syncthing
 transmission-cli
 unzip
 uptimed
+vdirsyncer
 vlc
 wine
 xautolock
