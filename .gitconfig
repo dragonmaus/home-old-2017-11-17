@@ -2,9 +2,13 @@
 	ui = auto
 [commit]
 	gpgsign = true
+[credential]
+	helper = store
 [gpg]
 	program = gpg2
-[include]
-	path = .gitconfig.secret
 [push]
 	default = simple
+[user]
+	email = dragonmaus@posteo.net
+	name = David Wildasin
+	signingkey = 83E508D74AB21C0E93F66978AA12E1E891EF069C
