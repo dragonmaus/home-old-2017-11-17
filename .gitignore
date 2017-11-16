@@ -20,6 +20,7 @@
 /.wine/
 /[A-Z]*
 /bin/
+/crypt
 /inc/
 /obj/
 /sbin/
