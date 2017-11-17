@@ -6,23 +6,14 @@ echo() {
   printf '%s\n' "$*"
 }
 
-trap -- 'rm -f .gitignore{new} .gitignore{tmp}' EXIT KILL INT
+file=.gitignore
 
-touch .gitignore
-rm -f .gitignore{tmp}
-
-(cat <.gitignore; for f do echo "$f"; done) \
-| sort -u \
->.gitignore{tmp}
-
-rm -f .gitignore{new}
-
-((grep '^/'      | sort -u) <.gitignore{tmp}
- (grep '^[^!*/]' | sort -u) <.gitignore{tmp}
- (grep '^\*'     | sort -u) <.gitignore{tmp}
- (grep '^!'      | sort -u) <.gitignore{tmp}) \
->.gitignore{new}
-
-chmod 600 .gitignore{new}
-
-cmp -s .gitignore .gitignore{new} || mv -f .gitignore{new} .gitignore
+test -f $file || touch $file
+rm -f $file{tmp}
+for f do echo "$f"; done | cat - $file | sort -u >$file{tmp}
+rm -f $file{new}
+(grep -v '^!' <$file{tmp} || :; grep '^!' <$file{tmp} || :) >$file{new}
+rm -f $file{tmp}
+chmod 600 $file{new}
+fsync $file{new}
+cmp -s $file $file{new} && rm -f $file{new} || mv -f $file{new} $file

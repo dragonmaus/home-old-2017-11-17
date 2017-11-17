@@ -1,3 +1,8 @@
+*-
+*.a
+*.log
+*.log.gz
+*.old
 /.*history
 /.[A-Z]*
 /.android/
@@ -25,8 +30,3 @@
 /sbin/
 /tmp/
 /xbin/
-*-
-*.a
-*.log
-*.log.gz
-*.old
